@@ -20,6 +20,8 @@
     "adxl345-sensor": "file:third_party_modules/adxl345-sensor",
     "bme680-sensor": "^1.0.0",
     "i2c-bus": "^5.2.1",
-    "oled-i2c-bus": "^1.0.12"
+    "oled-font-5x7": "^1.0.3",
+    "oled-i2c-bus": "^1.0.12",
+    "pngjs": "^6.0.0"
   }
 }
