@@ -1,0 +1,2 @@
+ADXL345:https://github.com/skylarstein/adxl345-sensor
+BME680:https://gitlab.com/ftmazzone/bme680
