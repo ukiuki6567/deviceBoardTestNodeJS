@@ -23,6 +23,7 @@
     "mcp-spi-adc": "^3.1.0",
     "oled-font-5x7": "^1.0.3",
     "oled-i2c-bus": "^1.0.12",
+    "pigpio": "^3.3.0",
     "pngjs": "^6.0.0",
     "sleep": "^6.3.0"
   }

@@ -11,7 +11,7 @@ const tempSensor = mcpadc.open(0, err => {
         throw err;
       }
 
-      console.log(reading.value * 4095);
+      console.log(reading.value * 1024);
     });
   }, 1000);
 });
