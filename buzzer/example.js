@@ -1,6 +1,6 @@
 const Gpio = require('pigpio').Gpio;
 
-const buzzer = new Gpio(12, {mode: Gpio.OUTPUT});
+const buzzer = new Gpio(18, {mode: Gpio.OUTPUT});
 const freq = [523, 587,659, 698, 784, 880,  988, 1046];
 
 function msleep(n){
