@@ -1,12 +1,12 @@
 const mcpadc = require('mcp-spi-adc');
 
-const tempSensor = mcpadc.open(0, err => {
+const illumSensor = mcpadc.open(1, err => {
   if (err) {
     throw err;
   }
 
   setInterval(_ => {
-    tempSensor.read((err, reading) => {
+    illumSensor.read((err, reading) => {
       if (err) {
         throw err;
       }
