@@ -1,0 +1,16 @@
+const Gpio = require('pigpio').Gpio;
+const led = new Gpio(23, {mode: Gpio.OUTPUT});
+
+function msleep(n){
+	Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, n);
+}
+
+let dutyCycle = 0;
+
+setInterval(() => {
+	led.pwmWrite(dutyCycle);
+	dutyCycle += 5;
+	if(dutyCycle >255){
+		dutyCycle = 0;
+	}
+}, 20);
