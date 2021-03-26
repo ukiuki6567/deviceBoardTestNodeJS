@@ -1,6 +1,6 @@
 const mcpadc = require('mcp-spi-adc');
 
-const illumSensor = mcpadc.open(1, err => {
+const illumSensor = mcpadc.open(0, err => {
   if (err) {
     throw err;
   }
